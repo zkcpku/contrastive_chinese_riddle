@@ -1,0 +1,50 @@
+05/31/2022 16:50:30 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 2, distributed training: False, 16-bits training: False
+You are using a model of type bart to instantiate a model of type bert. This is not supported for all configurations of models and can yield errors.
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BartTokenizer'. 
+The class this function is called from is 'BertTokenizer'.
+05/31/2022 16:50:40 - INFO - __main__ -   Training/evaluation parameters Namespace(MRR_num=100, PAD_ID=0, adam_epsilon=1e-08, ans_size=185, block_size=185, cache_dir='', config_name='fnlp/cpt-base', device=device(type='cuda'), do_eval=False, do_lower_case=False, do_test=False, do_train=True, epoch=30, eval_all_checkpoints=False, eval_batch_size=64, eval_data_file='../../dataset/valid.csv.for_seq_only_chaizi.json', evaluate_during_training=True, fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, learning_rate=2e-05, local_rank=-1, logging_steps=50, max_grad_norm=1.0, max_steps=-1, mlm=False, mlm_probability=0.15, model_name_or_path=None, model_type='chinese_bert', n_gpu=2, no_cuda=False, num_train_epochs=1.0, output_dir='./run_cpt_base_chaizi', overwrite_cache=False, overwrite_output_dir=False, per_gpu_eval_batch_size=32, per_gpu_train_batch_size=32, save_steps=50, save_total_limit=None, seed=123456, server_ip='', server_port='', start_epoch=0, start_step=0, test_data_file='../../dataset/valid.csv.for_seq_only_chaizi.json', tokenizer_name='fnlp/cpt-base', train_batch_size=64, train_data_file='../../dataset/train.csv.for_seq_only_chaizi.json', warmup_steps=0, weight_decay=0.0)
+05/31/2022 16:50:43 - INFO - __main__ -   *** Example ***
+05/31/2022 16:50:43 - INFO - __main__ -   input_tokens:['[CLS]', '半', '[UNK]', '一', '十', '数', '娄', '[UNK]', '嫌', '女', '兼', '贵', '中', '一', '贝', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   input_ids:[101, 1288, 100, 671, 1282, 3144, 2016, 100, 2066, 1957, 1076, 6586, 704, 671, 6564, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   output_tokens:['[CLS]', '赚', '贝', '兼', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   output_ids:[101, 6611, 6564, 1076, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   index:0
+05/31/2022 16:50:43 - INFO - __main__ -   label:0
+05/31/2022 16:50:43 - INFO - __main__ -   *** Example ***
+05/31/2022 16:50:43 - INFO - __main__ -   input_tokens:['[CLS]', '历', '厂', '力', '经', '丝', '圣', '风', '几', '乂', '雨', '一', '[UNK]', '丨', '丶', '丶', '丶', '丶', '见', '[UNK]', '丿', '[UNK]', '丹', '[UNK]', '丶', '一', '心', '丿', '[UNK]', '丶', '丶', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   input_ids:[101, 1325, 1322, 1213, 5307, 692, 1760, 7599, 1126, 717, 7433, 671, 100, 701, 708, 708, 708, 708, 6224, 100, 716, 100, 710, 100, 708, 671, 2552, 716, 100, 708, 708, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   output_tokens:['[CLS]', '雳', '雨', '历', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   output_ids:[101, 7438, 7433, 1325, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   index:1
+05/31/2022 16:50:43 - INFO - __main__ -   label:1
+05/31/2022 16:50:43 - INFO - __main__ -   *** Example ***
+05/31/2022 16:50:43 - INFO - __main__ -   input_tokens:['[CLS]', '历', '厂', '力', '经', '丝', '圣', '风', '几', '乂', '雨', '一', '[UNK]', '丨', '丶', '丶', '丶', '丶', '方', '[UNK]', '[UNK]', '团', '囗', '才', '聚', '耳', '又', '[UNK]', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   input_ids:[101, 1325, 1322, 1213, 5307, 692, 1760, 7599, 1126, 717, 7433, 671, 100, 701, 708, 708, 708, 708, 3175, 100, 100, 1730, 1722, 2798, 5471, 5455, 1348, 100, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   output_tokens:['[CLS]', '雳', '雨', '历', '[SEP]']
+05/31/2022 16:50:43 - INFO - __main__ -   output_ids:[101, 7438, 7433, 1325, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+05/31/2022 16:50:43 - INFO - __main__ -   index:2
+05/31/2022 16:50:43 - INFO - __main__ -   label:1
+/home/zhangkechi/anaconda3/envs/pytorch/lib/python3.7/site-packages/transformers/optimization.py:309: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use thePyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  FutureWarning,
+05/31/2022 16:50:55 - INFO - __main__ -   ***** Running training *****
+05/31/2022 16:50:55 - INFO - __main__ -     Num examples = 16631
+05/31/2022 16:50:55 - INFO - __main__ -     Num Epochs = 30
+05/31/2022 16:50:55 - INFO - __main__ -     Instantaneous batch size per GPU = 32
+05/31/2022 16:50:55 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 64
+05/31/2022 16:50:55 - INFO - __main__ -     Gradient Accumulation steps = 1
+05/31/2022 16:50:55 - INFO - __main__ -     Total optimization steps = 7800
+/home/zhangkechi/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+05/31/2022 16:52:51 - INFO - __main__ -   epoch 0 step 100 loss 7.66193
+05/31/2022 16:54:27 - INFO - __main__ -   epoch 0 step 200 loss 5.831
+05/31/2022 16:55:26 - INFO - __main__ -   ***** Running evaluation *****
+05/31/2022 16:55:26 - INFO - __main__ -     Num examples = 5480
+05/31/2022 16:55:26 - INFO - __main__ -     Batch size = 64
+  0%|          | 0/5480 [00:00<?, ?it/s]  6%|▌         | 322/5480 [00:00<00:01, 3212.54it/s] 12%|█▏        | 651/5480 [00:00<00:01, 3253.77it/s] 18%|█▊        | 977/5480 [00:00<00:01, 3249.80it/s] 24%|██▍       | 1307/5480 [00:00<00:01, 3268.09it/s] 30%|██▉       | 1634/5480 [00:00<00:01, 3263.25it/s] 36%|███▌      | 1965/5480 [00:00<00:01, 3276.88it/s] 42%|████▏     | 2293/5480 [00:00<00:00, 3269.49it/s] 48%|████▊     | 2620/5480 [00:00<00:00, 3268.01it/s] 54%|█████▍    | 2947/5480 [00:00<00:00, 3251.36it/s] 60%|█████▉    | 3276/5480 [00:01<00:00, 3262.48it/s] 66%|██████▌   | 3605/5480 [00:01<00:00, 3269.72it/s] 72%|███████▏  | 3937/5480 [00:01<00:00, 3281.25it/s] 78%|███████▊  | 4266/5480 [00:01<00:00, 3267.05it/s] 84%|████████▍ | 4595/5480 [00:01<00:00, 3271.52it/s] 90%|████████▉ | 4923/5480 [00:01<00:00, 3269.31it/s] 96%|█████████▌| 5254/5480 [00:01<00:00, 3278.19it/s]100%|██████████| 5480/5480 [00:01<00:00, 3268.27it/s]
+05/31/2022 16:56:00 - INFO - __main__ -     eval_loss = 3.2935
+05/31/2022 16:56:00 - INFO - __main__ -     eval_map = 0.0091
+05/31/2022 16:56:00 - INFO - __main__ -     ********************
+05/31/2022 16:56:00 - INFO - __main__ -     Best map:0.0091
+05/31/2022 16:56:00 - INFO - __main__ -     ********************
+05/31/2022 16:56:01 - INFO - __main__ -   Saving model checkpoint to ./run_cpt_base_chaizi/checkpoint-best-map/model.bin
